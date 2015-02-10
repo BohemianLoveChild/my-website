@@ -1,0 +1,30 @@
+{% extends "templates/partials/base.html" %}
+
+{% block base_type %}
+
+<div 
+	id="embed-window"
+	class="display-light" 
+	style="
+	width: 50%;
+    height: 0;; 
+    padding-bottom: 28.125%;
+    margin: auto;
+	"
+>
+
+	<iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                allowTransparency="true"
+                allowfullscreen
+                src="http://localhost:2002/playa-test/"
+    >
+    </iframe>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{# ------------------------------------------------------- #}
+
+{# YOUR HOMEPAGE #}
+
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+
+{# ------------------------------------------------------- #}
+
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/off-canvas-navbar-base.html" %}
+
+
+{# This sets our page <title>. It will append "- Homepage" to the site title defined in base. #}
+{% block title %}{% parent %} - Homepage{% endblock %}
+
+
+{% block content %}
+
+
+{# main video #}
+<div class="row">
+  <div class="small-12 column">
+    <div class="flex-video widescreen vimeo display-mid">
+
+<!--
+    <iframe width="560" height="315" src="//www.youtube.com/embed/q5-QWZjNJWI" frameborder="0" allowfullscreen></iframe>
+-->
+    <iframe 
+    	style="border: none;" width="100%" src="/embeds/aint-nobody?&w=398&h=224" frameborder="0" scrolling="no" allowTransparency="true" allowfullscreen></iframe>
+
+<!--
+      <video 
+      		width="640" 
+      		height="360" 
+      		style="width:100%; height:100%;" 
+      		id="angsmn-mv" 
+      		preload="none" 
+      		controls="controls" 
+      		data-url="http://www.aintnobodymusic.com"
+      		poster="/static/images/angsmn.jpg"
+      		title="angsmn" 
+      >
+            	<source 
+            		type="video/youtube" 
+            		src="https://www.youtube.com/watch?v=T5Ap6rkyBHY" 
+            	/>
+        </video>
+-->
+    </div>
+  </div>
+</div>
+
+{# crawler #}
+<div class="row">
+	<div class="small-12 column">
+		<div class="crawler display-mid">This is the crawler.</div>
+	</div>
+</div>
+
+{# teasers #}
+<div class="row">
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+  <div class="column small-12 medium-6 xlarge-4 xxlarge-3">
+    <div class="flex-video widescreen vimeo display-mid"></div>
+  </div>
+</div>
+
+
+{% endblock %}
+

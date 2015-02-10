@@ -1,0 +1,14 @@
+{# Adds wrap for off canvas navigation with topbar #}
+
+
+{% extends "templates/partials/base.html" %}
+
+	{% block base_type %}
+
+		{% include "templates/partials/off-canvas-wrap-top.html" %}
+
+			{% block content %}{% endblock %}
+
+		{% include "templates/partials/off-canvas-wrap-bottom.html" %}
+
+	{% endblock %}

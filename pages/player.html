@@ -1,0 +1,185 @@
+{% extends "templates/partials/embed-base.html" %}
+    
+    {% block content %}
+
+        {# IFRAME CONTAINER #}
+        <div 
+            class="embed-container" 
+
+            style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                line-height:0;
+                overflow: hidden;
+                "
+        >
+
+            {# YOUTUBE IFRAME #}
+            <!--
+src="http://www.youtube.com/embed/q5-QWZjNJWI?wmode=opaque&version=3&vq=hd1080&rel=0&controls=0&showinfo=0&enablejsapi=1"
+-->
+
+            <iframe 
+                id="youtube-iframe" 
+                width="1920" 
+                height="1080" 
+                frameborder="0" 
+                scrolling="no" 
+                allowTransparency="true"
+                allowfullscreen
+
+                src="http://www.youtube.com/embed/q5-QWZjNJWI?wmode=opaque&version=4&vq=hd1080&rel=0&controls=0&showinfo=0&enablejsapi=1"
+
+
+                style="
+                    position: absolute; 
+                    top: 0; 
+                    left: 0; 
+                    width: 100%; 
+                    height: 100%;
+                    line-height:0;
+                    overflow: hidden;
+                    z-index:5000;
+                "
+            >
+            </iframe>
+
+
+            {# OVERLAY #}
+            <div class="overlay display-mid"
+                    style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        line-height:0;
+                        overflow: hidden;
+                    "
+
+            >
+                <div class="row"
+                    style="
+                        padding:7px 0;
+                        "
+                >
+                    {# left column of social buttons #}
+                    <div class="small-2 column">
+                        <div class="embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                        <div class=" embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                        <div class=" embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                    </div>
+
+                    {# big ass play button #}
+                    <div class="small-8 column">
+                        <div class="custom-play-button display-ligh"
+                        style="
+
+                        position:relative;
+                        line-height:0;
+                        width:25%;
+                        height:0;
+                        padding-bottom:25%;
+                        margin: auto;
+                        z-index:10001;
+                        background-image: url('/static/images/vinny-blank.png');
+                        background-size: contain;
+                        pointer-events: none;
+                        "
+                        >
+                        </div>
+                    </div>
+
+                    {# right column of social buttons #}
+                    <div class="small-2 column">
+                        <div class="embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                        <div class=" embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                        <div class=" embed-social-button display-ligh"
+                            href="http://www.aintnobodymusic.com"
+                            style="
+                                position:relative;
+                                height:0;
+                                width:100%;
+                                line-height:0;
+                                padding-bottom:100%;
+                                z-index:10001;
+                                background-image: url('/static/images/vinny-blank.png');
+                                background-size: contain;
+                            "
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        {# CLOSE IFRAME CONTAINER #}
+        </div>
+
+    {% endblock %}

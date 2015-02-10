@@ -1,0 +1,249 @@
+// Import Foundation
+  	@import "foundation/settings";
+ 	 @import "foundation";
+
+//Import Display colors for layout markup
+	@import "my/display";
+
+#bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 384px;
+    height: 216px;
+    background-image:url('http://www.hqsoul.com/wp-content/uploads/2014/11/Mark-Ronson-Uptown-Funk-ft.-Bruno-Mars.jpg');
+    background-size: cover;
+    z-index:5001;
+    pointer-events: none;
+}
+
+
+.column{
+	margin-bottom: $gutter;
+}
+
+.align-right{
+	text-align: right;
+}
+
+$crawler-height: rem-calc(50);
+.crawler{
+	height: $crawler-height;
+	font-size: $crawler-height;
+	font-weight: bold;
+	line-height: $crawler-height;
+	color: $dark;
+	
+}
+
+.embed-poster-frame{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index:5001;
+    background-repaat: none;
+    background-size: contain;
+}
+
+.embed-social-button-column {
+    top:8%;
+}
+
+.embed-social-button {
+    float:right;
+    clear:right;
+    margin-top:2%;
+    margin-right:2%;
+	position:relative;
+    height:0;
+    width:16%;
+    line-height:0;
+    padding-bottom:16%;
+    z-index:3;
+    background-image: url('/static/images/vinny-blank.png');
+    background-size: contain;
+}
+.suggested-videos-thumb {
+   
+    float:left;
+    clear: left;
+    margin-top:2%;
+    margin-left:2%;
+    position: relative;
+    height:0;
+    width:16%;
+    padding-bottom:15%;
+    z-index:3;
+    background-image: url('/static/images/angsmn.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+    border-style: solid;
+    border-width:0.5vw;
+    border-color: black;
+}
+
+.embed-social-button-text {
+	line-height:0;
+    padding-top:50%;
+    text-align: center;
+    font-weight: bold;
+    color:#000;
+    font-family: Impact;
+    font-size:7.5vw;
+}
+
+.play-button-text {
+    line-height:0;
+    padding-top:50%;
+    text-align: center;
+    font-weight: bold;
+    color:#000;
+    font-family: Impact;
+    font-size:10vw;
+}
+
+.vertical-centerizer {
+    position: relative;
+    top:55%;
+}
+
+.embed-play-button {
+    top:30%;
+    position:relative;
+    line-height:0;
+    width:20%;
+    height:0;
+    padding-bottom:20%;
+    margin: auto;
+    z-index:10001;
+    background-image: url('/static/images/vinny-blank.png');
+    background-size: contain;
+}
+
+.embed-flex-vid{
+    position: relative;
+    width:100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    line-height:0;
+    overflow: hidden;
+}
+
+.launcher-play-button {
+    bottom:50%;
+    position:relative;
+    line-height:0;
+    width:25%;
+    height:0;
+    padding-bottom:25%;
+    margin: auto;
+    z-index:10001;
+    background-image: url('/static/images/vinny-blank.png');
+    background-size: contain;
+}
+
+.click-through {
+    pointer-events: none;
+}
+
+.behind {
+    z-index:-1000;
+}
+
+.launcher {
+    height: 0%;
+    width: 100%;
+    padding-bottom:56.25%;
+    background-size: contain;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    ine-height:0;
+    overflow: hidden;
+}
+
+.overlay-poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:5001;
+    background-image:url('/static/images/play-button.svg');
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+.flexContainerParent {
+    position:relative;
+    width:100%;
+    height:0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.flexContainerChild {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+#poster {
+    z-index:2;
+    background-image:url('http://hdwallpapersx.com/wp-content/uploads/2013/09/Colors-smoke-water-art-abstract-3d.jpg');
+    background-size: cover;
+    /* background-color:rgba(0, 0, 0, 0); */
+}
+
+@-moz-document url-prefix() {
+    #poster {
+        -moz-opacity: .9899;
+        opacity: .9899;
+        /* filter: alpha(opacity=99); */
+    }
+}
+
+#ytPlayer {
+    z-index:1;
+}
+#playButton {
+    width:20%;
+    height: 0;
+    padding-bottom:20%;
+    background-image:url('/static/images/vinny-blank.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.centerize {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+}
+.overlay {
+    z-index:3;
+}
+.clickThrough {
+    pointer-events:none;
+}

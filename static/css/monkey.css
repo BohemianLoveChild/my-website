@@ -1,0 +1,53 @@
+.video, .image, .clickTarget{
+    height:150px;
+    position: absolute;
+    font-size:30px;
+    color:#F2F;
+    text-align: center;
+}
+.clickTarget{
+    background-color:#000;
+}
+.image {
+    z-index:1;
+    pointer-events: none;
+    background-size: cover;
+}
+
+.jpgOverVideoFull {
+    top:20px;
+    left:20px;
+}
+
+.pngOverVideoFull {
+    top:190px;
+    left:20px;
+}
+
+.jpgOverVideoShort {
+    top:20px;
+    left:240px;
+}
+
+.pngOverVideoShort {
+    top:190px;
+    left:240px;
+}
+
+.jpgOverDiv {
+    top:360px;
+    left:20px;
+}
+
+.pngOverDiv {
+    top:360px;
+    left:240px;
+}
+
+.full {
+    width:200px;
+}
+
+.short {
+    width:199px;
+}

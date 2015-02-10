@@ -1,0 +1,19 @@
+{% extends "templates/partials/embed-base.html" %}
+    
+    {% block embed %}
+
+        {# EMBED CONTAINER #}
+        <div class="flexContainerParent">
+
+            {# YOUTUBE IFRAME #}
+
+                {% include "templates/partials/youtube-iframe.html" %}
+
+            {# EMBED OVERLAY #}
+
+                {% include "templates/partials/embed-overlay.html" %}
+
+        
+        </div> {# EMBED CONTAINER #}
+
+    {% endblock %}
