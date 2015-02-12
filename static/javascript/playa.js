@@ -34,7 +34,8 @@ function onPlayerStateChange(event) {
     // respond to states
 var playButton = $('#playButton'),
     poster = $('#poster'),
-    socialButtons = $('.socialButtons');
+    socialButtons = $('.embed-social-button'),
+    suggestedVideoThumbs = $('.suggested-video-thumb');
     
     function onPlayaLoad() {
         playButton.show();
@@ -65,7 +66,7 @@ var playButton = $('#playButton'),
             .to(playButton,0.35, {scale: "1.5", rotation: "-30", ease:Sine.easeInOut})
             .to(playButton,1, {scale: "0", rotation: "75", ease:Power3.easeOut})
             .to(playButton,0.5, {autoAlpha: "0", delay: "0.5", ease:Power1.easeInOut}, "0")
-        .to(poster, 1.69, {autoAlpha: "0", scale: "1.15", rotation: "-1.5", ease:Sine.easeInOut}, "0");
+        .to(poster, 1.69, {autoAlpha: "0", scale: "1.15", rotation: "-1.8", ease:Sine.easeInOut}, "0");
     }
     function onPaused() {
         var onPausedTimeline = new TimelineMax();
@@ -73,9 +74,11 @@ var playButton = $('#playButton'),
             .fromTo(playButton,0.35, {autoAlpha: "0"}, {autoAlpha: "1"}, "0")
             .fromTo(playButton,3, {scale: "0.25", rotation: "50"}, {scale: "1", rotation: "0", ease:Elastic.easeOut}, "0")
             .to(playButton,0.5, {scale: "0.9", rotation: "5", repeat: -1, yoyo:true, ease:Sine.easeInOut}, "-=2.7")
-        .fromTo(poster, 0.55, {autoAlpha: "0", scale:"1.05", rotation:"-0.5"}, {autoAlpha: "1", scale:"1",rotation:"0",ease:Sine.easeInOut}, "0")
+        .fromTo(poster, 0.55, {autoAlpha: "0", scale:"1.05", rotation:"-0.4"}, {autoAlpha: "0.9899", scale:"1",rotation:"0",ease:Sine.easeInOut}, "0")
         .to(socialButtons,0,{display: "block"},0)
-        .from(socialButtons,1, {y: "-100%", scale: "0", ease:Sine.easeOut}, "0");
+        .staggerFrom(socialButtons,2.5, {x: "100%", scale: "0", rotation:"45", ease:Elastic.easeOut}, 0.25, "0")
+        .to(suggestedVideoThumbs,0,{display: "block"},0)
+        .staggerFrom(suggestedVideoThumbs,2.5, {x: "-100%", scale: "0", rotation:"-45", ease:Elastic.easeOut}, 0.25, "0");
             
     }
     function onEnded() {
@@ -84,3 +87,4 @@ var playButton = $('#playButton'),
     function onUnstarted() {
         //do stuff
     }
+

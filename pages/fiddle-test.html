@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/app.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type='text/javascript' src="https://www.youtube.com/iframe_api"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
+    </head>
+     <body>
+        <div class="page">
+    
+            <div class="flexContainerParent">
+                
+                <iframe id="player" class="flexContainerChild" width="1920" height="1080" frameborder="0" title="YouTube video player" type="text/html" src="https://www.youtube.com/embed/fGksDvKZ9ek?wmode=opaque&controls=0&showinfo=0&enablejsapi=1"></iframe>
+                
+                <div id="poster" class="flexContainerChild overlay clickThrough"></div>
+                
+                <div id="playButtonOverlay" class="flexContainerChild overlay clickThrough">
+                    
+                    <div id="playButton" class="centerize clickThrough"></div>
+                    
+                </div>
+                
+                <div id="onPausedOverlay" class="flexContainerChild overlay clickThrough">
+                    
+                    <div class="socialButtons">fb</div>
+                    <div class="socialButtons">tw</div>
+                    <div class="socialButtons">go</div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <script src="/static/javascript/playa.js"></script>
+
+    </body>
+</html>
+

@@ -8285,11 +8285,12 @@ body {
   line-height: 0;
   padding-bottom: 16%;
   z-index: 3;
-  background-image: url("/static/images/vinny-blank.png");
+  background-image: url("/static/images/mini-vinny-blank.png");
   background-size: contain;
+  display: none;
 }
 
-.suggested-videos-thumb {
+.suggested-video-thumb {
   float: left;
   clear: left;
   margin-top: 2%;
@@ -8305,6 +8306,8 @@ body {
   border-style: solid;
   border-width: 0.5vw;
   border-color: black;
+  display: none;
+  border-radius: 50%;
 }
 
 .embed-social-button-text {
@@ -8341,7 +8344,7 @@ body {
   padding-bottom: 20%;
   margin: auto;
   z-index: 10001;
-  background-image: url("/static/images/vinny-blank.png");
+  background-image: url("/static/images/mini-vinny-blank.png");
   background-size: contain;
 }
 
@@ -8363,7 +8366,7 @@ body {
   padding-bottom: 25%;
   margin: auto;
   z-index: 10001;
-  background-image: url("/static/images/vinny-blank.png");
+  background-image: url("/static/images/mini-vinny-blank.png");
   background-size: contain;
 }
 
@@ -8434,7 +8437,7 @@ body {
   }
 }
 
-#ytPlayer {
+#player {
   z-index: 1;
 }
 
@@ -8442,7 +8445,7 @@ body {
   width: 20%;
   height: 0;
   padding-bottom: 20%;
-  background-image: url("/static/images/vinny-blank.png");
+  background-image: url("/static/images/mini-vinny-blank.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
